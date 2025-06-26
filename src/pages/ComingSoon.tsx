@@ -1,7 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 
 const ComingSoon = () => {
   return (
@@ -45,22 +43,9 @@ const ComingSoon = () => {
             Get ready for an unforgettable frozen treat experience.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="text-center sm:text-left">
-              <p className="text-sm text-gray-500 mb-2">Stay tuned for updates</p>
-              <p className="text-2xl font-bold text-gray-800">Launch 2025</p>
-            </div>
-            
-            <div className="h-8 w-px bg-gray-300 hidden sm:block"></div>
-            
-            <Link to="/login">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blueberry-500 to-strawberry-500 hover:from-blueberry-600 hover:to-strawberry-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                Admin Login
-              </Button>
-            </Link>
+          <div className="text-center">
+            <p className="text-sm text-gray-500 mb-2">Stay tuned for updates</p>
+            <p className="text-2xl font-bold text-gray-800">Launch 2025</p>
           </div>
         </div>
         
