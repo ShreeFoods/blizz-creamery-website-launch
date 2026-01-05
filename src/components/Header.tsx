@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-
+import logo from "../assets/images/logo.png"
 const Header = () => {
   // const { logout } = useAuth();
 
@@ -19,7 +19,7 @@ const Header = () => {
             <span className="text-2xl font-bold bg-gradient-to-r from-blueberry-600 to-strawberry-600 bg-clip-text text-transparent">
               Blizz
             </span> */}
-            <img src="public\images\logo.png" alt="" className='h-12 w-full' />
+            <img src={logo} alt="" className="h-12 w-full" />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
