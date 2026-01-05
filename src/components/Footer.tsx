@@ -36,7 +36,7 @@ const Footer = () => {
             <h3 className="font-semibold text-gray-800 mb-4">Contact Info</h3>
             <div className="space-y-2 text-sm text-gray-600">
               <p>Shree Foods Private Limited</p>
-              <p>Email: info@shreefoods.com</p>
+              <p>Email: support@shreefoods.co.in</p>
               <p>Phone: +91 XXX XXX XXXX</p>
             </div>
           </div>

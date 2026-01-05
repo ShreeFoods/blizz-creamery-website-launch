@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -20,42 +19,20 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <AuthProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<ComingSoon />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/dashboard" element={
-              <ProtectedRoute>
-                <Dashboard />
-              </ProtectedRoute>
-            } />
-            <Route path="/about" element={
-              <ProtectedRoute>
-                <About />
-              </ProtectedRoute>
-            } />
-            <Route path="/products" element={
-              <ProtectedRoute>
-                <Products />
-              </ProtectedRoute>
-            } />
-            <Route path="/contact" element={
-              <ProtectedRoute>
-                <Contact />
-              </ProtectedRoute>
-            } />
-            <Route path="/privacy" element={
-              <ProtectedRoute>
-                <Privacy />
-              </ProtectedRoute>
-            } />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </AuthProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/" element={<ComingSoon />} />
+            <Route path="/login" element={<Login />} /> */}
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );

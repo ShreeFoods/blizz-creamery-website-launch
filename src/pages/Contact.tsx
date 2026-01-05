@@ -46,18 +46,19 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col gradient-bg">
       <Header />
-      
+
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="animate-fade-in">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Get In{' '}
+              Get In{" "}
               <span className="bg-gradient-to-r from-blueberry-600 to-strawberry-600 bg-clip-text text-transparent">
                 Touch
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              We'd love to hear from you. Send us a message and we'll respond as
+              soon as possible.
             </p>
           </div>
 
@@ -97,7 +98,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="subject">Subject</Label>
                     <Input
@@ -109,7 +110,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
                     <Textarea
@@ -122,13 +123,13 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <Button
                     type="submit"
                     className="w-full bg-gradient-to-r from-blueberry-500 to-strawberry-500 hover:from-blueberry-600 hover:to-strawberry-600 text-white"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
@@ -138,7 +139,9 @@ const Contact = () => {
             <div className="space-y-6">
               <Card className="glass-card">
                 <CardHeader>
-                  <CardTitle className="text-2xl">Contact Information</CardTitle>
+                  <CardTitle className="text-2xl">
+                    Contact Information
+                  </CardTitle>
                   <CardDescription>
                     Reach out to us through any of these channels
                   </CardDescription>
@@ -150,10 +153,10 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">info@shreefoods.com</p>
+                      <p className="text-gray-600">support@shreefoods.co.in</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-r from-strawberry-400 to-strawberry-500 rounded-lg flex items-center justify-center">
                       <span className="text-white">📞</span>
@@ -163,7 +166,7 @@ const Contact = () => {
                       <p className="text-gray-600">+91 XXX XXX XXXX</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-r from-cream-400 to-cream-500 rounded-lg flex items-center justify-center">
                       <span className="text-white">📍</span>
@@ -171,9 +174,8 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-gray-800">Address</p>
                       <p className="text-gray-600">
-                        Shree Foods Private Limited<br />
-                        Manufacturing Unit<br />
-                        India
+                        Shree Foods private limited 30, <br /> Dev industrial area,
+                        BIDC, Gorwa, Vadodara.
                       </p>
                     </div>
                   </div>
@@ -227,7 +229,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );
